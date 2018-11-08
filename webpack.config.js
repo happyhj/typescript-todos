@@ -24,8 +24,8 @@ module.exports = {
         loader: "babel-loader",
         options: {
           // TODO: 지원범위 지정
-          // presets: ["@babel/preset-env", "@babel/preset-typescript"]
-          presets: ["@babel/preset-typescript"]
+          // presets: ["@babel/preset-env", "@babel/preset-typescript", "@babel/preset-react"]
+          presets: ["@babel/preset-typescript", "@babel/preset-react"]
         }
       }
     ]
