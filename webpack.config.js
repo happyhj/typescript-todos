@@ -1,5 +1,7 @@
 const path = require("path");
 
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
   mode: "production",
   // TODO: 지원범위 지정
@@ -27,5 +29,10 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./index.html"
+    })
+  ]
 };
