@@ -1,0 +1,13 @@
+{
+  "defaultSeverity": "warning",
+  "linterOptions": {
+    "exclude": ["node_modules/", "dist/"]
+  },
+  "extends": ["tslint:latest", "tslint-react"],
+  "rules": {
+    "trailing-comma": false
+  },
+  "jsRules": {
+    "trailing-comma": false
+  }
+}
