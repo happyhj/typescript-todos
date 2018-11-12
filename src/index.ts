@@ -3,8 +3,10 @@ import ReactDOM from "react-dom";
 
 import TodoApp from "./TodoApp";
 
-const containerElement = renderContainerElement("todo-app");
-ReactDOM.render(React.createElement(TodoApp), containerElement);
+ReactDOM.render(
+  React.createElement(TodoApp),
+  renderContainerElement("todo-app")
+);
 
 function renderContainerElement(containerId: string): HTMLElement {
   const containerElement = window.document.createElement("div");
